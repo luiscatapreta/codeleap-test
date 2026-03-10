@@ -1,73 +1,74 @@
-# React + TypeScript + Vite
+# CodeLeap Network - Frontend Challenge Masterclass 🚀
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+[Português](#português) | [English](#english)
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+<a name="português"></a>
+## 🇧🇷 Português
 
-## React Compiler
+Este projeto é uma implementação avançada do desafio de frontend da CodeLeap. Além dos requisitos básicos, ele foi elevado ao nível **Senior/Elite** com funcionalidades de UX moderna, arquitetura limpa e alta performance.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### 🛠️ Tech Stack
+- **Framework**: React + Vite
+- **Linguagem**: TypeScript (Strict Mode)
+- **Estilização**: CSS Puro (Custom Properties & Design System)
+- **Estado Global**: React Context API
+- **Persistência**: LocalStorage (Mock API)
 
-## Expanding the ESLint configuration
+### ✨ Funcionalidades "Elite" (Recruiter Gems)
+- **Dark Mode Nativo**: Suporte a temas claro e escuro com persistência.
+- **Infinite Scroll**: Implementado via `Intersection Observer API`.
+- **Busca Debounced**: Filtro de posts com inteligência para evitar sobrecarga.
+- **Skeleton Loading**: Placeholders animados durante o carregamento.
+- **Toast Notifications**: Sistema de feedback visual premium.
+- **Auto-save Drafts**: Persistência de rascunhos em tempo real.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+### 🏗️ Arquitetura e Decisões Técnicas
+- **Mock API Service**: Camada isolada que simula chamadas reais de backend usando LocalStorage e delays artificiais.
+- **Clean Code**: Tipagem estrita com interfaces centralizadas, zero uso de `any` e componentes modais padronizados.
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+---
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+<a name="english"></a>
+## 🇺🇸 English
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+This project is an advanced implementation of the CodeLeap frontend challenge. Beyond the basic requirements, it has been elevated to a **Senior/Elite** level with modern UX features, clean architecture, and high performance.
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### 🛠️ Tech Stack
+- **Framework**: React + Vite
+- **Language**: TypeScript (Strict Mode)
+- **Styling**: Pure CSS (Custom Properties & Design System)
+- **Global State**: React Context API
+- **Persistence**: LocalStorage (Mock API)
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+### ✨ "Elite" Features (Recruiter Gems)
+- **Native Dark Mode**: Support for light and dark themes with persistence.
+- **Infinite Scroll**: Implemented via `Intersection Observer API`.
+- **Debounced Search**: Smart post filtering to avoid performance bottlenecks.
+- **Skeleton Loading**: Animated placeholders during data fetching.
+- **Toast Notifications**: Premium visual feedback system.
+- **Auto-save Drafts**: Real-time persistence of half-written posts.
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+### 🏗️ Architecture and Technical Decisions
+- **Mock API Service**: An isolated layer that simulates real backend calls using LocalStorage and artificial delays.
+- **Clean Code**: Strict typing with centralized interfaces, zero usage of `any`, and standardized modal components.
+
+---
+
+## 🚀 How to Run / Como Rodar
+
+1. Clone the repository / Clone o repositório.
+2. Install dependencies / Instale as dependências:
+   ```bash
+   npm install
+   ```
+3. Start development server / Inicie o servidor:
+   ```bash
+   npm run dev
+   ```
+4. **Open Console (F12)** to track simulated API calls / para acompanhar chamadas de API simuladas.
+
+---
+
+Developed with a focus on **UX, Performance, and Clean Code**. Ready to impress! / Desenvolvido com foco em **UX, Performance e Clean Code**. ✨💻
